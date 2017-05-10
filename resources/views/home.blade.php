@@ -39,16 +39,19 @@
                         <h4><i class="fa fa-tags"></i>&nbsp;&nbsp;标签</h4>
                     </div>
                     <ul class="mount-tags-ul mount-body">
-                        <a href="###" class="mount-tag-list">php</a>
-                        <a href="###" class="mount-tag-list">python</a>
-                        <a href="###" class="mount-tag-list">web</a>
-                        <a href="###" class="mount-tag-list">physical</a>
-                        <a href="###" class="mount-tag-list">like</a>
-                        <a href="###" class="mount-tag-list">php</a>
-                        <a href="###" class="mount-tag-list">python</a>
-                        <a href="###" class="mount-tag-list">web</a>
-                        <a href="###" class="mount-tag-list">physical</a>
-                        <a href="###" class="mount-tag-list">like</a>
+                        @foreach($tags as $tag)
+                            <a href="###" class="mount-tag-list">{{ $tag->name }}</a>
+                        @endforeach
+                        {{--<a href="###" class="mount-tag-list">php</a>--}}
+                        {{--<a href="###" class="mount-tag-list">python</a>--}}
+                        {{--<a href="###" class="mount-tag-list">web</a>--}}
+                        {{--<a href="###" class="mount-tag-list">physical</a>--}}
+                        {{--<a href="###" class="mount-tag-list">like</a>--}}
+                        {{--<a href="###" class="mount-tag-list">php</a>--}}
+                        {{--<a href="###" class="mount-tag-list">python</a>--}}
+                        {{--<a href="###" class="mount-tag-list">web</a>--}}
+                        {{--<a href="###" class="mount-tag-list">physical</a>--}}
+                        {{--<a href="###" class="mount-tag-list">like</a>--}}
                     </ul>
                 </div>
             </div>

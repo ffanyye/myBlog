@@ -17,3 +17,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 Route::get('/article','ArticleController@index');
+
+
+Route::group(['namespace'=>'Stage','prefix'=>'stage'],function(){
+    Route::get('/','BlogbkController@index');
+    Route::resource('tags', 'TagsController');
+});
